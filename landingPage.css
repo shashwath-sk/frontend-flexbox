@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(4, 4, 16);
+    color:white;
+    height: 90px;
+}
+.paddingBody{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.title h1{
+    margin: 0;
+    padding-top: 15px ;
+    font-size: 27px;
+}
+.subTitle h3{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-bottom: 7px;
+}
+.footer{
+    bottom: 0;
+    background-color: rgb(4, 4, 16);
+    color:white;
+    width: 100vw;
+    height: 40px;
+    margin-top: 40px;
+}
+.footer>h3{
+    padding-top: 15px;
+}
+.blogs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.box {
+    width: 340px;
+    height: 425px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+}
+.image img{
+    width: 340px;
+    height: 220px;
+}
+.image-like img{
+    width: 20px;
+    height: 20px;
+}
+.image-padding{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image-post-details{
+    display: flex;
+    justify-content: space-between;
+}
+.image-post-details span{
+    color: rgb(203, 201, 201);
+    font-size: 16px;
+}
+.image-margin{
+    margin-top:7px ;
+}
+.image-header span{
+    font-size: 25px;
+}
+.image-description{
+    font-size: 17px;
+    color: gray;
+}
+.image-like {
+    display: flex;
+    align-items: center;
+}
+.image-like span{
+    padding-right: 260px;
+}

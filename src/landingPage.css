@@ -75,6 +75,7 @@ body{
 .image-post-details{
     display: flex;
     justify-content: space-between;
+    overflow: scroll;
 }
 .image-post-details span{
     color: rgb(203, 201, 201);
@@ -85,10 +86,22 @@ body{
 }
 .image-header span{
     font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
 .image-description{
     font-size: 17px;
     color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 .image-like {
     display: flex;

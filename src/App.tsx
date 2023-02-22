@@ -1,15 +1,18 @@
-import React from 'react';
-import Header from './Components/header/Header'
-import Contianer from './Components/body/Container';
-import Footer from './Components/footer/Footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ERROR_ROUTE, HOME_ROUTE } from "./constants/routes";
+import { Error, Home, PageNotFound } from "./pages";
 import './landingPage.css'
 
 function App() {
   return (
     <div className="App">
-       <Header/>
-       <Contianer/>
-       <Footer/>
+       <BrowserRouter>
+        <Routes>
+          <Route path={HOME_ROUTE} element={<Home />} />
+          <Route path={`${ERROR_ROUTE}/:errorCode?`} element={<Error />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>  
   );
 }
